@@ -50,11 +50,11 @@ export default function TextForm(props) {
                 <textarea className="form-control" 
                 value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark' ? 'grey':'white', color: props.mode==='dark' ? 'white':'black'}} id="mybox" rows="10"></textarea>
             </div>
-            <button className="btn btn-dark" onClick={handleUpClick}>Convert To Uppercase</button>
-            <button className="btn btn-dark mx-3" onClick={handleLoClick}>Convert To Lowercase</button>
-            <button className="btn btn-dark mx-3" onClick={handleClClick}>Clear the text</button>
-            <button className="btn btn-dark mx-3" onClick={Capitalizer}>Capitalize first character</button>
-            <button className="btn btn-dark mx-3" onClick={handleCopy}>Copy to clipboard</button>
+            <button className="btn btn-dark mx-3 my-3" onClick={handleUpClick}>Convert To Uppercase</button>
+            <button className="btn btn-dark mx-3 my-3" onClick={handleLoClick}>Convert To Lowercase</button>
+            <button className="btn btn-dark mx-3 my-3" onClick={handleClClick}>Clear the text</button>
+            <button className="btn btn-dark mx-3 my-3" onClick={Capitalizer}>Capitalize first character</button>
+            <button className="btn btn-dark mx-3 my-3" onClick={handleCopy}>Copy to clipboard</button>
             <button className="btn btn-dark mx-3 my-3" onClick={remExtSpace}>Remove extra spaces</button>
         </div>
         <div className="container my-3" style={{color: props.mode==='dark' ? 'white':'black'}}>
